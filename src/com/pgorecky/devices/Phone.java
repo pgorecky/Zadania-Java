@@ -1,4 +1,4 @@
-package com.pgorecky;
+package com.pgorecky.devices;
 
 public class Phone {
     final public String model;
@@ -13,5 +13,8 @@ public class Phone {
         this.yearOfProdtuction = yearOfProdtuction;
         this.memory = memory;
         this.value = value;
+    }
+    public String toString(){
+        return model + " " + producer + " $" + value + " " + memory;
     }
 }

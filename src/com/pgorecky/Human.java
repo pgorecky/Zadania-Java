@@ -1,5 +1,8 @@
 package com.pgorecky;
 
+import com.pgorecky.devices.Car;
+import com.pgorecky.devices.Phone;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -10,7 +13,7 @@ public class Human {
     Double previousSalary;
     Animal pet;
     Integer yearOfBirth;
-    private Phone phone;
+    public Phone phone;
     private Car car;
     LocalDateTime ldt;
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
@@ -18,6 +21,23 @@ public class Human {
         this.firstName = firstName;
         this.lastName = lastName;
         this.yearOfBirth = yearOfBirth;
+    }
+    public void displayHuman(){
+        System.out.println("First name: " +firstName);
+        System.out.println("Last name: " +lastName);
+        System.out.println("Year of birth: " +yearOfBirth);
+    }
+    public void displayPet(){
+        System.out.println("You own a dog named: "+ pet.name);
+        System.out.println("His weight is: "+ pet.weight);;
+    }
+    public void displayCar(){
+        if (!(car == null)){
+            System.out.println("You own a car: "+ car.producer + car.model + "with a " + car.horsepower + "hp");
+            System.out.println("Your car costs a $"+ car.value);
+        } else {
+            System.out.println("You don't own any cars");
+        }
     }
     public void setSalary(Double salary){
         if (salary < 0){
@@ -53,5 +73,7 @@ public class Human {
     public Car getCar (){
         return this.car;
     }
-
+    public String toString(){
+        return firstName + " " + lastName + " $" + salary + " " + yearOfBirth;
+    }
 }

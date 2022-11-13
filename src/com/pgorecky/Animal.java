@@ -38,4 +38,7 @@ public class Animal {
         }
         else System.out.println("Aren't you ashamed to take a dead dog for a walk? ");
     }
+    public String toString(){
+        return species + " " + name + " " + weight + "lbs  is alive?: " + isAlive;
+    }
 }
