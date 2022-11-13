@@ -8,6 +8,7 @@ public class Human {
     Animal pet;
     Integer yearOfBirth;
     private Phone phone;
+    public Car car;
 
     public Human(String firstName, String lastName, Integer yearOfBirth){
         this.firstName = firstName;
