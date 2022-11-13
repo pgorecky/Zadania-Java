@@ -11,7 +11,7 @@ public class Human {
     Animal pet;
     Integer yearOfBirth;
     private Phone phone;
-    public Car car;
+    private Car car;
     LocalDateTime ldt;
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
     public Human(String firstName, String lastName, Integer yearOfBirth){
@@ -37,6 +37,21 @@ public class Human {
         System.out.println("The value of the payout last time was changed a day: " + dtf.format(ldt));
         System.out.println("The salary before the changes was: $" + previousSalary);
         System.out.println("The current salary is: $" + salary);
+    }
+    public void setCar(Car car) {
+        if (salary > car.value){
+            System.out.println("Congratulations on your purchase. You managed to buy the car with cash.");
+            this.car = car;
+        } else if (salary > car.value/12) {
+            System.out.println("Congratulations on your purchase. You managed to buy the car on credit");
+            this.car = car;
+        } else {
+            System.out.println("Unfortunately, you are a poor man!!! Enroll in college and fight for your future while it's not too late");
+        }
+    }
+
+    public Car getCar (){
+        return this.car;
     }
 
 }

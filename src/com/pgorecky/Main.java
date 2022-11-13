@@ -9,7 +9,8 @@ public class Main {
         dog.takeForAWalk();
         dog.feed();
         Car auto = new Car("Vanquish S", "Aston Martin", 520, 253000);
-        me.car = auto;
+        me.setCar(auto);
+        System.out.println(me.getCar());
         me.setSalary(16000.0);
         me.getInformationAboutSalary();
     }
