@@ -1,20 +1,20 @@
 package com.pgorecky.devices;
 
-public class Phone {
-    final public String model;
-    final public String producer;
-    public final Integer yearOfProdtuction;
+public class Phone extends Device{
     public Integer memory;
-    public Integer value;
 
-    public Phone(String model, String producer, Integer yearOfProdtuction, Integer memory, Integer value) {
-        this.model = model;
-        this.producer = producer;
-        this.yearOfProdtuction = yearOfProdtuction;
+    public Phone(String model, String producer,Integer yearOfProduction, Integer memory, Integer value)
+    {
+        super(producer, model, yearOfProduction, value);
         this.memory = memory;
-        this.value = value;
     }
+
     public String toString(){
         return model + " " + producer + " $" + value + " " + memory;
+    }
+
+    @Override
+    public void turnOn() {
+        System.out.println("Phone is turned on now");
     }
 }

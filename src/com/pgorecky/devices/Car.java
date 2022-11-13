@@ -2,18 +2,14 @@ package com.pgorecky.devices;
 
 import java.util.Objects;
 
-public class Car {
-    final public String model;
-    final public String producer;
+public class Car extends Device{
     public Integer horsepower;
-    public Integer value;
 
-    public Car(String model, String producer, Integer horsepower, Integer value)
+
+    public Car(String model, String producer,Integer yearOfProduction, Integer horsepower, Integer value)
     {
-        this.model = model;
-        this.producer = producer;
+        super(producer, model, yearOfProduction, value);
         this.horsepower = horsepower;
-        this.value = value;
     }
 
     @Override
@@ -31,5 +27,10 @@ public class Car {
 
     public String toString(){
         return model + " " + producer + " " + horsepower + "hp $" + value;
+    }
+
+    @Override
+    public void turnOn() {
+        System.out.println("Car is turned on now");
     }
 }

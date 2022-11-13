@@ -13,8 +13,8 @@ public class Main {
         me.displayPet();
         dog.takeForAWalk();
         dog.feed();
-        Car car = new Car("Vanquish S", "Aston Martin", 520, 253000);
-        Car car1 = new Car("Vanquish S", "Aston Martin", 520, 253000);
+        Car car = new Car("Vanquish S", "Aston Martin", 2017,520, 253000);
+        Car car1 = new Car("Vanquish S", "Aston Martin", 2017,520, 253000);
         me.setCar(car);
         System.out.println(me.getCar());
         me.displayCar();
@@ -28,5 +28,7 @@ public class Main {
         System.out.println(me);
         System.out.println(dog);
         System.out.println(iPhone);
+        car.turnOn();
+        iPhone.turnOn();
     }
 }
