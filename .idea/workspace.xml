@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b525a13-8d53-4863-a7ef-f7233f942a1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Zadania-Java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/pgorecky/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/pgorecky/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/pgorecky/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/pgorecky/Phone.java" afterDir="false" />
-    </list>
+    <list default="true" id="2b525a13-8d53-4863-a7ef-f7233f942a1c" name="Changes" comment="Zadanie 0-1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,6 +64,14 @@
       <option name="presentableId" value="Default" />
       <updated>1668366685930</updated>
     </task>
+    <task id="LOCAL-00001" summary="Zadanie 0-1">
+      <created>1668367447421</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668367447422</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,5 +84,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Zadanie 0-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 0-1" />
   </component>
 </project>
