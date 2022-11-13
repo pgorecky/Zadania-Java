@@ -5,12 +5,11 @@ import com.pgorecky.devices.Phone;
 
 public class Main {
     public static void main(String[] args) {
-        Human me = new Human("Patryk", "Gorecki", 1998);
+        Human me = new Human("Patryk", "Gorecki", 1998, 150000.0);
         me.displayHuman();
         Animal dog = new Animal("dog");
         dog.name = "Snowy";
         me.pet = dog;
-        me.displayPet();
         dog.takeForAWalk();
         dog.feed();
         Car car = new Car("Vanquish S", "Aston Martin", 2017,520, 253000);
@@ -30,5 +29,16 @@ public class Main {
         System.out.println(iPhone);
         car.turnOn();
         iPhone.turnOn();
+        Human buyer = new Human("Elon", "Blain",1971,1000000.0);
+        me.displayPet();
+        buyer.displayPet();
+        dog.sell(me, buyer, 1000.0);
+        me.displayPet();
+        buyer.displayPet();
+        System.out.println(buyer.cash);
+        car.sell(me, buyer, 100000.0);
+        System.out.println(buyer.cash);
+        iPhone.sell(me, buyer, 1000.0);
+        System.out.println(buyer.cash);
     }
 }

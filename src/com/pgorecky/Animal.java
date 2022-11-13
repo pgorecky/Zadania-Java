@@ -1,10 +1,13 @@
 package com.pgorecky;
 
-public class Animal {
+import com.pgorecky.devices.salleable;
+
+public class Animal implements salleable {
     final String species;
     String name;
     Double weight;
     Boolean isAlive;
+
 
     Animal(String species)
     {
@@ -40,5 +43,18 @@ public class Animal {
     }
     public String toString(){
         return species + " " + name + " " + weight + "lbs  is alive?: " + isAlive;
+    }
+
+    @Override
+    public void sell(Human seller, Human buyer, Double price) {
+        if (seller.pet != null){
+            if (buyer.cash >= price) {
+                seller.cash += price;
+                buyer.cash -= price;
+                buyer.pet = seller.pet;
+                seller.pet = null;
+                System.out.println("SUCCESSFUL SALE");
+            } else System.out.println("Buyer is poor, can't afford it!!! ");
+        } else System.out.println("He's a scammer, there's nothing for sale!!! ");
     }
 }

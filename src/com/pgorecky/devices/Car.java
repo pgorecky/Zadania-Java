@@ -1,8 +1,10 @@
 package com.pgorecky.devices;
 
+import com.pgorecky.Human;
+
 import java.util.Objects;
 
-public class Car extends Device{
+public class Car extends Device implements salleable{
     public Integer horsepower;
 
 
@@ -32,5 +34,18 @@ public class Car extends Device{
     @Override
     public void turnOn() {
         System.out.println("Car is turned on now");
+    }
+
+    @Override
+    public void sell(Human seller, Human buyer, Double price) {
+        if (seller.getCar() != null){
+            if (buyer.cash >= price) {
+                seller.cash += price;
+                buyer.cash -= price;
+                buyer.setPurchasedCar(seller.getCar());
+                seller.clearCar();
+                System.out.println("SUCCESSFUL SALE");
+            } else System.out.println("Buyer is poor, can't afford it!!! ");
+        } else System.out.println("He's a scammer, there's nothing for sale!!! ");
     }
 }

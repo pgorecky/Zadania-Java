@@ -6,21 +6,23 @@ import com.pgorecky.devices.Phone;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Human {
+public class Human{
     String firstName;
     String lastName;
     Double salary = 15000.0;
     Double previousSalary;
+    public Double cash;
     Animal pet;
     Integer yearOfBirth;
     public Phone phone;
     private Car car;
     LocalDateTime ldt;
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-    public Human(String firstName, String lastName, Integer yearOfBirth){
+    public Human(String firstName, String lastName, Integer yearOfBirth, Double cash){
         this.firstName = firstName;
         this.lastName = lastName;
         this.yearOfBirth = yearOfBirth;
+        this.cash = cash;
     }
     public void displayHuman(){
         System.out.println("First name: " +firstName);
@@ -28,8 +30,12 @@ public class Human {
         System.out.println("Year of birth: " +yearOfBirth);
     }
     public void displayPet(){
+        if (!(pet == null)){
         System.out.println("You own a dog named: "+ pet.name);
-        System.out.println("His weight is: "+ pet.weight);;
+        System.out.println("His weight is: "+ pet.weight);
+        } else {
+            System.out.println("You don't own any pets");
+        }
     }
     public void displayCar(){
         if (!(car == null)){
@@ -69,6 +75,13 @@ public class Human {
             System.out.println("Unfortunately, you are a poor man!!! Enroll in college and fight for your future while it's not too late");
         }
     }
+    public void setPurchasedCar (Car car) {
+        this.car = car;
+    }
+
+    public void clearCar(){
+        this.car = null;
+    }
 
     public Car getCar (){
         return this.car;
@@ -76,4 +89,5 @@ public class Human {
     public String toString(){
         return firstName + " " + lastName + " $" + salary + " " + yearOfBirth;
     }
+
 }
