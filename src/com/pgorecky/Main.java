@@ -30,15 +30,8 @@ public class Main {
         car.turnOn();
         iPhone.turnOn();
         Human buyer = new Human("Elon", "Blain",1971,1000000.0);
-        me.displayPet();
-        buyer.displayPet();
         dog.sell(me, buyer, 1000.0);
-        me.displayPet();
-        buyer.displayPet();
-        System.out.println(buyer.cash);
         car.sell(me, buyer, 100000.0);
-        System.out.println(buyer.cash);
         iPhone.sell(me, buyer, 1000.0);
-        System.out.println(buyer.cash);
     }
 }

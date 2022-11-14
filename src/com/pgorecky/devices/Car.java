@@ -6,6 +6,7 @@ import java.util.Objects;
 
 public class Car extends Device implements salleable{
     public Integer horsepower;
+    public boolean isSold = false;
 
 
     public Car(String model, String producer,Integer yearOfProduction, Integer horsepower, Integer value)
@@ -40,6 +41,7 @@ public class Car extends Device implements salleable{
     public void sell(Human seller, Human buyer, Double price) {
         if (seller.getCar() != null){
             if (buyer.cash >= price) {
+                this.isSold = true;
                 seller.cash += price;
                 buyer.cash -= price;
                 buyer.setPurchasedCar(seller.getCar());

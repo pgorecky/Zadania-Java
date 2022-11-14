@@ -76,11 +76,15 @@ public class Human{
         }
     }
     public void setPurchasedCar (Car car) {
-        this.car = car;
+        if (car.isSold){
+            this.car = car;
+        } else System.out.println("You can't do that");
     }
 
     public void clearCar(){
+        if (car.isSold){
         this.car = null;
+        } else System.out.println("You can't do that");
     }
 
     public Car getCar (){
