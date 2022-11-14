@@ -1,6 +1,6 @@
 package com.pgorecky.devices;
 
-import com.pgorecky.Human;
+import com.pgorecky.creatures.Human;
 
 public class Phone extends Device implements salleable{
     public Integer memory;

@@ -1,5 +1,9 @@
 package com.pgorecky;
 
+import com.pgorecky.creatures.Animal;
+import com.pgorecky.creatures.FarmAnimal;
+import com.pgorecky.creatures.Human;
+import com.pgorecky.creatures.Pet;
 import com.pgorecky.devices.Car;
 import com.pgorecky.devices.Phone;
 
@@ -7,7 +11,9 @@ public class Main {
     public static void main(String[] args) {
         Human me = new Human("Patryk", "Gorecki", 1998, 150000.0);
         me.displayHuman();
-        Animal dog = new Animal("dog");
+        Pet dog = new Pet("dog");
+        FarmAnimal duck = new FarmAnimal("duck");
+        duck.setOwner(me);
         dog.name = "Snowy";
         me.pet = dog;
         dog.takeForAWalk();
@@ -33,5 +39,7 @@ public class Main {
         dog.sell(me, buyer, 1000.0);
         car.sell(me, buyer, 100000.0);
         iPhone.sell(me, buyer, 1000.0);
+        System.out.println(duck.getOwner());
+        System.out.println(duck.isOwned());
     }
 }

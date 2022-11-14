@@ -1,6 +1,6 @@
 package com.pgorecky.devices;
 
-import com.pgorecky.Human;
+import com.pgorecky.creatures.Human;
 
 import java.util.Objects;
 

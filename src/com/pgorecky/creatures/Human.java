@@ -1,4 +1,4 @@
-package com.pgorecky;
+package com.pgorecky.creatures;
 
 import com.pgorecky.devices.Car;
 import com.pgorecky.devices.Phone;
@@ -6,19 +6,20 @@ import com.pgorecky.devices.Phone;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Human{
+public class Human extends Animal{
     String firstName;
     String lastName;
     Double salary = 15000.0;
     Double previousSalary;
     public Double cash;
-    Animal pet;
+    public Animal pet;
     Integer yearOfBirth;
     public Phone phone;
     private Car car;
     LocalDateTime ldt;
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
     public Human(String firstName, String lastName, Integer yearOfBirth, Double cash){
+        super("homo sapiens");
         this.firstName = firstName;
         this.lastName = lastName;
         this.yearOfBirth = yearOfBirth;
@@ -91,7 +92,7 @@ public class Human{
         return this.car;
     }
     public String toString(){
-        return firstName + " " + lastName + " $" + salary + " " + yearOfBirth;
+        return firstName + " " + lastName + " " + yearOfBirth;
     }
 
 }

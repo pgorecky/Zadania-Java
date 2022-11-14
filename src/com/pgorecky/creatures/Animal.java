@@ -1,15 +1,16 @@
-package com.pgorecky;
+package com.pgorecky.creatures;
 
 import com.pgorecky.devices.salleable;
 
-public class Animal implements salleable {
+public abstract class Animal implements salleable, Feedable, Ownable {
     final String species;
-    String name;
+    public String name;
     Double weight;
     Boolean isAlive;
+    Human owner;
 
 
-    Animal(String species)
+    public Animal(String species)
     {
         isAlive = true;
         this.species = species;
@@ -20,7 +21,7 @@ public class Animal implements salleable {
         }
     }
 
-    void feed()
+    public void feed()
     {
         if (weight > 0)
         {
@@ -29,7 +30,10 @@ public class Animal implements salleable {
         }
         else System.out.println("Your dog won't eat anything anymore for a simple reason: he's dead you little bastard ");
     }
-    void takeForAWalk()
+    public void feed(Integer foodWeight) {
+        System.out.println("feed(Integer)");
+    }
+    public void takeForAWalk()
     {
         if (isAlive && (weight > 0))
         {
@@ -56,5 +60,19 @@ public class Animal implements salleable {
                 System.out.println("SUCCESSFUL SALE");
             } else System.out.println("Buyer is poor, can't afford it!!! ");
         } else System.out.println("He's a scammer, there's nothing for sale!!! ");
+    }
+
+    @Override
+    public Human getOwner() {
+        return this.owner;
+    }
+
+    public void setOwner(Human human){
+        this.owner = human;
+    }
+
+    @Override
+    public Boolean isOwned() {
+        return this.owner != null;
     }
 }
