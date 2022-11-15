@@ -31,6 +31,12 @@ public abstract class Animal implements salleable, Feedable, Ownable {
         else System.out.println("Your dog won't eat anything anymore for a simple reason: he's dead you little bastard ");
     }
     public void feed(Integer foodWeight) {
+        if (weight > 0)
+        {
+            this.weight += foodWeight;
+            System.out.println("The dog is grateful to you! ");
+        }
+        else System.out.println("Your dog won't eat anything anymore for a simple reason: he's dead you little bastard ");
         System.out.println("feed(Integer)");
     }
     public void takeForAWalk()
