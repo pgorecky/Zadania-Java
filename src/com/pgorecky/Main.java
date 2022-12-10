@@ -5,6 +5,7 @@ import com.pgorecky.creatures.FarmAnimal;
 import com.pgorecky.creatures.Human;
 import com.pgorecky.creatures.Pet;
 import com.pgorecky.devices.Car;
+import com.pgorecky.devices.CarWash;
 import com.pgorecky.devices.Phone;
 
 public class Main {
@@ -20,6 +21,7 @@ public class Main {
         dog.feed();
         Car car = new Car("Vanquish S", "Aston Martin", 2017,520, 253000);
         Car car1 = new Car("Vanquish S", "Aston Martin", 2017,520, 253000);
+        CarWash wash = new CarWash();
         me.setCar(car);
         System.out.println(me.getCar());
         me.displayCar();
@@ -41,5 +43,6 @@ public class Main {
         iPhone.sell(me, buyer, 1000.0);
         System.out.println(duck.getOwner());
         System.out.println(duck.isOwned());
+        wash.washTheCar(car);
     }
 }

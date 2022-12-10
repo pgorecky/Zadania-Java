@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b525a13-8d53-4863-a7ef-f7233f942a1c" name="Changes" comment="Zadanie 9">
+    <list default="true" id="2b525a13-8d53-4863-a7ef-f7233f942a1c" name="Changes" comment="Ćwiczenia 10.12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pgorecky/creatures/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pgorecky/creatures/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pgorecky/devices/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pgorecky/devices/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/pgorecky/creatures/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pgorecky/creatures/Human.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +20,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -146,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668430865540</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Ćwiczenia 10.12">
+      <created>1670674328334</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670674328334</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,6 +177,7 @@
     <MESSAGE value="Zadanie 8" />
     <MESSAGE value="Zadanie 8_corrected" />
     <MESSAGE value="Zadanie 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 9" />
+    <MESSAGE value="Ćwiczenia 10.12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ćwiczenia 10.12" />
   </component>
 </project>

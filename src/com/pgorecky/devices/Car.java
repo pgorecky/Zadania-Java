@@ -7,6 +7,7 @@ import java.util.Objects;
 public class Car extends Device implements salleable{
     public Integer horsepower;
     public boolean isSold = false;
+    public boolean isClean = false;
 
 
     public Car(String model, String producer,Integer yearOfProduction, Integer horsepower, Integer value)

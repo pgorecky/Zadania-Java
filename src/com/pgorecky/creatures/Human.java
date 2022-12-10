@@ -12,7 +12,7 @@ public class Human extends Animal{
     Double salary = 15000.0;
     Double previousSalary;
     public Double cash;
-    public Animal pet;
+    public Pet pet;
     Integer yearOfBirth;
     public Phone phone;
     private Car car;
