@@ -44,5 +44,6 @@ public class Main {
         System.out.println(duck.getOwner());
         System.out.println(duck.isOwned());
         wash.washTheCar(car);
+        System.out.println("");
     }
 }
